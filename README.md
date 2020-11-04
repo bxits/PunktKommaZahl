@@ -10,3 +10,6 @@ In diesem Projekt lernst du...
 
 ...wie man aus diesem Kommazahlen-String eine "echte" Kommazahl macht, mit der der Computer rechnen kann.
 
+...wie man den Computer dazu bringt, die eingegebene Zahl richtig zu interpretieren.
+
+...wie man eine echte Kommazahl landestypisch auf der Oberfläche ausgibt.

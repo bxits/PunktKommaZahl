@@ -27,7 +27,11 @@ namespace PunktKommaZahl
         }
 
         private void btnKonvZuZahl_Click(object sender, RoutedEventArgs e)
-        {   //20.4
+        {
+            ///In D-Land: 1.500,99
+            ///In USA: 1,500.99
+            ///
+            //20.4
             string eingabe = txtEingabe.Text;
             //Variante 1
             eingabe = eingabe.Replace('.', ',');
@@ -41,8 +45,11 @@ namespace PunktKommaZahl
 
             double temp = Convert.ToDouble(eingabe, provider);
 
-            //Ohne Landesformat, am
+            //Ohne Landesformat
             double zahl = Convert.ToDouble(eingabe, CultureInfo.InvariantCulture);
+
+            //Was passiert hier, wenn du auf der Oberfläche 20.4 eingibst?
+            double falsch = Convert.ToDouble(txtEingabe.Text);
 
         }
     }

@@ -36,9 +36,12 @@ namespace PunktKommaZahl
             //Variante 1
             eingabe = eingabe.Replace('.', ',');
 
-            //Variante 2
-            double zahl2 = Double.Parse(eingabe, CultureInfo.InvariantCulture);
-
+            //Variante 2, Landesformat des Betriebssystem verwenden.
+            double zahl2 = Double.Parse(eingabe, CultureInfo.CurrentCulture);
+            
+            //Ausgabe im Landesformat
+            string zahl2AlsString = Convert.ToString(zahl2, CultureInfo.CurrentCulture); 
+                
             //Variante 3
             NumberFormatInfo provider = new NumberFormatInfo();
             provider.NumberDecimalSeparator = ".";

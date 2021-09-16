@@ -28,7 +28,8 @@ namespace PunktKommaZahl
 
         private void btnKonvZuZahl_Click(object sender, RoutedEventArgs e)
         {
-            ///In D-Land: 1.500,99
+            ///
+			///In D-Land: 1.500,99
             ///In USA: 1,500.99
             ///
             //20.4
